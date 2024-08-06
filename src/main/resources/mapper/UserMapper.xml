@@ -12,20 +12,23 @@
             <result property="age" column="age" jdbcType="INTEGER"/>
             <result property="sex" column="sex" jdbcType="TINYINT"/>
             <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="userProfile" column="userProfile" jdbcType="VARCHAR"/>
             <result property="email" column="email" jdbcType="VARCHAR"/>
-            <result property="avatar" column="avatar" jdbcType="INTEGER"/>
+            <result property="userAvatar" column="userAvatar" jdbcType="VARCHAR"/>
             <result property="userRole" column="userRole" jdbcType="INTEGER"/>
             <result property="userStatus" column="userStatus" jdbcType="TINYINT"/>
             <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
             <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="tags" column="tags" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         id,userName,userAccount,
         userPassword,age,sex,
-        phone,email,avatar,
-        userRole,userStatus,isDelete,
-        createTime,updateTime
+        phone,userProfile,email,
+        userAvatar,userRole,userStatus,
+        isDelete,createTime,updateTime,
+        tags
     </sql>
 </mapper>
